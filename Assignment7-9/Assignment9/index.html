@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Graphics town framework code by Mike Gleicher
+  -- written October, 2015
+  -->
+<head>
+    <meta charset="UTF-8">
+    <title>GraphicsTown JS 2015!</title>
+</head>
+<body>
+<!-- load this stuff first -->
+<script src="Libraries/twgl-full.js"></script>
+<script src="Libraries/panel.js"></script>
+<script src="Libraries/arcball.js"></script>
+<script src="grobject.js"></script>
+<script src="hermite.js"></script>
+<script src="texture.js"></script>
+<script src="ExampleObjects/ground.js"></script>
+
+<script type="text/javascript" src="negx.imgjs"></script>
+<script type="text/javascript" src="negy.imgjs"></script>
+<script type="text/javascript" src="negz.imgjs"></script>
+<script type="text/javascript" src="posx.imgjs"></script>
+<script type="text/javascript" src="posy.imgjs"></script>
+<script type="text/javascript" src="posz.imgjs"></script>
+<script src="skybox.js"></script>
+
+<!-- This is where we load the objects for the world -->
+<script src="ExampleObjects/simplest.js"></script>
+<script src="ExampleObjects/tree.js"></script>
+<script src="ExampleObjects/roof.js"></script>
+<script src="ExampleObjects/house.js"></script>
+<script src="ExampleObjects/building.js"></script>
+<script src="ExampleObjects/car.js"></script>
+
+<!-- I am adding the helicopter -->
+<script src="Helicopter/helicopter.js"></script>
+<script src="Helicopter/helicopterMesh.js"></script>
+<script src="Drone/drone.js"></script>
+<script src="Drone/Drone_data.js"></script>
+<script type="text/javascript" src="ExampleObjects/glass.imgjs"></script>
+<!-- This gets loaded LAST (actually, it probably doesn't have to) -->
+<script src="graphicstown.js"></script>
+</body>
+
+
+<script id="building-vs" type="notjs">
+    precision highp float;
+    attribute vec3 vpos;
+    attribute vec3 vnormal;
+    varying vec3 outColor;
+    varying vec3 fNormal;
+    varying vec3 outNormal;
+    varying vec2 fTexCoord;
+    attribute vec2 vTex;
+    uniform mat3 normalMatrix;
+    uniform mat4 view;
+    uniform mat4 proj;
+    uniform mat4 model;
+    uniform vec3 lightdir;
+    uniform vec3 cubecolor;
+    varying vec3 outLightDir;
+    varying vec3 fPos;
+    void main(void) {
+        gl_Position = proj * view * model * vec4(vpos, 1.0);
+        fNormal = normalize(normalMatrix * vnormal);
+        outNormal = normalize(view * model * vec4(vnormal,0.0)).xyz;
+      
+        fPos =(view* model* vec4(vpos.xyz,1.0)).xyz;
+        outLightDir = lightdir;
+        fTexCoord = vTex;
+    }
+</script>
+<script id="building-fs" type="notjs">
+    precision highp float;
+    varying vec3 outColor;
+    varying vec3 outLightDir;
+    varying vec3 fPos;
+    varying vec3 fNormal;
+    varying vec3 outNormal;
+    const float specular_coeff = 1.0;
+    const float specular_exp = 12.0;
+    const vec3  light_color = vec3(1.0, 1.0, 1.0);
+    varying vec2 fTexCoord;
+    uniform vec3 cubecolor;
+    uniform sampler2D texSampler3;
+    void main(void) {
+        vec3 l = normalize(outLightDir);
+        vec3 n = normalize(outNormal);
+        vec3 e = normalize(-fPos);
+        vec3 h = normalize (e+l);
+        vec4 texColor = texture2D(texSampler3, fTexCoord);
+        float diffuse = 1.0 + 3.5*abs(dot(outNormal, outLightDir));
+        float specular = pow(max(dot(n,h),0.0),20.0); 
+        vec3 outColor = cubecolor * diffuse* specular;
+        gl_FragColor = vec4(texColor) + vec4(outColor, 1.0);
+    }
+</script>
+
+
+
+
+<script id="tree-vs" type="notjs">
+// specialized shader for the simple cube
+// we assume that the model matrix works as the normal
+//      matrix - this only is try if the model matrix
+//      it a rotate/translate
+//      (uniform scale is OK since we re-normalize)
+// color is solid
+// simple lighting
+    precision highp float;
+
+    attribute vec3 vpos;
+    attribute vec3 vnormal;
+    attribute vec3 vcolor;
+    attribute vec2 vtexturecoords;
+    varying vec3 outColor;
+    varying vec2 fTexCoord;
+
+    uniform mat4 view;
+    uniform mat4 proj;
+    uniform mat4 model;
+    uniform vec3 lightdir;
+    uniform vec3 treecolor;
+
+
+    void main(void) {
+        gl_Position = proj * view * model * vec4(vpos, 1.0);
+        vec4 normal = normalize(model * vec4(vnormal,0.0));
+        float diffuse = .5 + .5*abs(dot(normal, vec4(lightdir,0.0)));
+        outColor = vcolor * diffuse;
+        fTexCoord = vtexturecoords;
+    }
+</script>
+<script id="tree-fs" type="notjs">
+// simple shader that does vertex coloring
+//  (e.g. the vertex shader figures the lighting
+// note this is used for more than just the cube
+    precision highp float;
+    varying vec3 outColor;
+    varying vec2 fTexCoord;
+    void main(void) {
+        gl_FragColor = vec4(outColor, 1.0);
+    }
+</script>
+
+<script id="car-vs" type="notjs">
+// specialized shader for the simple cube
+// we assume that the model matrix works as the normal
+//      matrix - this only is try if the model matrix
+//      it a rotate/translate
+//      (uniform scale is OK since we re-normalize)
+// color is solid
+// simple lighting
+    precision highp float;
+
+    attribute vec3 vpos;
+    attribute vec3 vnormal;
+    varying vec3 outColor;
+
+    uniform mat4 view;
+    uniform mat4 proj;
+    uniform mat4 model;
+    uniform vec3 lightdir;
+    uniform vec3 cubecolor;
+
+
+    void main(void) {
+        gl_Position = proj * view * model * vec4(vpos, 1.0);
+        vec4 normal = normalize(model * vec4(vnormal,0.0));
+        float diffuse = .5 + .5*abs(dot(normal, vec4(lightdir,0.0)));
+        outColor = cubecolor * diffuse;
+    }
+</script>
+<script id="car-fs" type="notjs">
+// simple shader that does vertex coloring
+//  (e.g. the vertex shader figures the lighting
+// note this is used for more than just the cube
+    precision highp float;
+    varying vec3 outColor;
+    void main(void) {
+        gl_FragColor = vec4(outColor, 1.0);
+    }
+</script>
+
+<script id="cargo-vs" type="notjs">
+// specialized shader for the simple cube
+// we assume that the model matrix works as the normal
+//      matrix - this only is try if the model matrix
+//      it a rotate/translate
+//      (uniform scale is OK since we re-normalize)
+// color is solid
+// simple lighting
+    precision highp float;
+
+    attribute vec3 vertex;
+    attribute vec3 normal;
+    attribute vec2 texcoord;
+    varying vec3 fLightDir;
+
+    varying vec3 fpos;
+    varying vec3 fnorm;
+    varying vec2 fTexCoord;
+    varying mat4 fnormalM;
+    varying vec3 fspotlightPos;
+    varying vec3 worldPos;
+
+    uniform mat4 view;
+    uniform mat4 proj;
+    uniform mat4 model;
+    uniform mat4 normalM;
+    uniform vec3 lightdir;
+    uniform vec3 spotlightPos;
+
+
+    void main(void) {
+        gl_Position = proj * view * model * vec4(vertex, 1.0);
+        fpos = (view * model * vec4(vertex, 1.0)).xyz;
+        fnorm = (normalM * vec4(normal, 1.0)).xyz;
+        worldPos = (model * vec4(vertex, 1.0)).xyz;
+        fLightDir = lightdir;
+        fTexCoord = texcoord;
+        fnormalM = normalM;
+        fspotlightPos = spotlightPos;
+    }
+</script>
+<script id="cargo-fs" type="notjs">
+// simple shader that does vertex coloring
+//  (e.g. the vertex shader figures the lighting
+// note this is used for more than just the cube
+    precision highp float;
+
+    uniform sampler2D tex;
+    uniform sampler2D normalMap;
+    uniform mat4 normalM;
+    uniform mat4 model;
+
+    varying vec3 fLightDir;
+    varying vec3 fpos;
+    varying vec2 fTexCoord;
+    varying mat4 fnormalM;
+    varying vec3 fnorm;
+    varying vec3 worldPos;
+
+    const float ambient_coeff   = 0.6;
+    const float specular_coeff  = 0.2;
+    const float specular_exp    = 32.0;
+    const vec3  light_color     = vec3(1.0,1.0,1.0);
+    const vec3  object_color    = vec3(0.1,0.6,0.5);
+
+    varying vec3 fspotlightPos;
+
+    vec3 spotlight(vec3 fpos, vec3 normal) {
+        float dotProd = dot(normalize(fpos - fspotlightPos), normalize(-fspotlightPos));
+        if (dotProd >= 0.95 && abs(length(fpos - fspotlightPos)) < 40.0) {
+            float distance = length(fpos - fspotlightPos);
+            float intensity = .1 + .3*pow((60.0 - distance)/60.0, 4.0) + pow(((dotProd - 0.95)/0.05), 4.0)*.2;
+            return abs(dot(normalize(fpos-fspotlightPos), normalize(normal)))*vec3(intensity, intensity, intensity);
+        }
+        return vec3(0,0,0);
+    }
+
+    void main(void) {
+        vec4 texColor = texture2D(tex,fTexCoord);
+
+        vec4 fnormal = texture2D(normalMap, fTexCoord);
+        fnormal.a = 1.0;
+        fnormal = normalize(normalM * fnormal);
+
+        vec3 l = normalize(fLightDir);
+        vec3 n = normalize(fnormal.xyz);
+        vec3 e = normalize(-fpos);
+        vec3 h = normalize (e+l);
+
+        vec3 specular_color = specular_coeff * pow(max(0.0,dot(n,h)),specular_exp) * light_color;
+
+        vec3 diffuse_color = texColor.xyz * max(0.0, dot(fnormal.xyz, l));
+
+        vec3 ambient_color = ambient_coeff  * texColor.xyz;
+
+        //gl_FragColor = vec4(n, 1.0);
+
+        gl_FragColor = vec4(specular_color + ambient_color + spotlight(worldPos, n), 1.0);
+    }
+</script>
+
+<script id="cube-vs" type="notjs">
+// specialized shader for the simple cube
+// we assume that the model matrix works as the normal
+//      matrix - this only is try if the model matrix
+//      it a rotate/translate
+//      (uniform scale is OK since we re-normalize)
+// color is solid
+// simple lighting
+    precision highp float;
+
+    attribute vec3 vpos;
+    attribute vec3 vnormal;
+    varying vec3 outColor;
+    varying vec3 fLightDir;
+    varying vec3 fpos;
+
+    uniform mat4 view;
+    uniform mat4 proj;
+    uniform mat4 model;
+    uniform vec3 lightdir;
+    uniform vec3 cubecolor;
+
+
+    void main(void) {
+        gl_Position = proj * view * model * vec4(vpos, 1.0);
+        vec4 normal = normalize(model * vec4(vnormal,0.0));
+        float diffuse = .5 + .5*abs(dot(normal, vec4(lightdir,0.0)));
+        outColor = cubecolor * diffuse;
+        fpos = (model * vec4(vpos, 1.0)).xyz;
+        fLightDir = lightdir;
+    }
+</script>
+<script id="cube-fs" type="notjs">
+// simple shader that does vertex coloring
+//  (e.g. the vertex shader figures the lighting
+// note this is used for more than just the cube
+    precision highp float;
+    varying vec3 outColor;
+    varying vec3 fLightDir;
+    varying vec3 fpos;
+    uniform vec3 spotlightPos;
+
+    vec3 spotlight(vec3 fpos) {
+        float dotProd = dot(normalize(fpos - spotlightPos), normalize(-spotlightPos));
+        if (dotProd >= 0.95 && length(fpos - spotlightPos) < 60.0) {
+            float distance = length(fpos - spotlightPos);
+            float intensity = .1 + .3*pow((60.0 - distance)/60.0, 4.0) + pow(((dotProd - 0.95)/0.05), 4.0)*.2;
+            return vec3(intensity, intensity, intensity);
+        }
+        return vec3(0,0,0);
+    }
+
+    void main(void) {
+        gl_FragColor = vec4(outColor + spotlight(fpos), 1.0);
+    }
+</script>
+
+<!-- Special Ground Plane Shader - makes a boring
+  -- checkerboard
+  -->
+<script id="ground-vs" type="not-js">
+    precision highp float;
+
+    attribute vec3 vpos;
+    varying vec3 outPos;
+    varying vec3 fspotlightPos;
+
+    uniform mat4 view;
+    uniform mat4 proj;
+    uniform vec3 spotlightPos;
+
+    void main(void) {
+        gl_Position = proj * view * vec4(vpos, 1.0);
+        outPos = vpos;
+        fspotlightPos = spotlightPos;
+    }
+</script>
+<script id="ground-fs" type="notjs">
+    // note this is used for more than just the cube
+    precision highp float;
+    varying vec3 outPos;
+    varying vec3 fspotlightPos;
+
+    vec3 spotlight(vec3 fpos) {
+        float dotProd = dot(normalize(fpos - fspotlightPos), normalize(-fspotlightPos));
+        if (dotProd >= 0.95 && length(fpos - fspotlightPos) < 60.0) {
+            float distance = length(fpos - fspotlightPos);
+            float intensity = .1 + .3*pow((60.0 - distance)/60.0, 4.0) + pow(((dotProd - 0.95)/0.05), 4.0)*.2;
+            return vec3(intensity, intensity, intensity);
+        }
+        return vec3(0,0,0);
+    }
+
+    void main(void) {
+        gl_FragColor = vec4(0.589, 0.316, 0.281, 0.8) + vec4(spotlight(outPos), 0.0);
+    }
+</script>
+
+<script type="notjs" id="skybox-vs">
+     uniform mat4 projection;
+     uniform mat4 modelview;
+     uniform mat4 modelM;
+     attribute vec3 vertexPositions;
+     varying vec3 vCoords;
+     void main() {
+        vec4 eyeCoords = modelview * modelM * vec4(vertexPositions,1.0);
+        gl_Position = projection * eyeCoords;
+        vCoords = vertexPositions;
+     }
+</script>
+<script type="notjs" id="skybox-fs">
+     precision mediump float;
+     varying vec3 vCoords;
+     uniform samplerCube skybox;
+     void main() {
+          gl_FragColor = textureCube(skybox, vCoords);
+          //gl_FragColor = vec4(1.0, 0.0, 0.0, 1.0);
+     }
+</script>
+
+</html>

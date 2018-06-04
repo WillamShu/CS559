@@ -1,3 +1,2 @@
 # CS559 Computer Graphic
-## First Assignment
-Draw a picture with HTML canvas
+For more detailed assginment requirement: http://graphics.cs.wisc.edu/WP/cs559-sp2018/category/assignments/

@@ -1,0 +1,45 @@
+// url: https://goo.gl/DkGs5W
+// Not moving so the color will not change.
+// SHADER 1
+// FRAGMENT
+precision highp float;
+uniform float time;
+varying vec3 fNormal;
+varying vec3 uPos;
+
+void main()
+{
+  float ys = uPos.y*5.0 - floor(uPos.y*5.0);
+  float xs = uPos.x*5.0 - floor(uPos.x*5.0);
+  float zs = uPos.z*5.0 - floor(uPos.z*5.0);
+
+  vec3 direction = vec3(xs,ys,zs);
+  
+  float xc = smoothstep(0.0,1.0,xs);
+  float yc = smoothstep(0.0,1.0,ys);
+  float zc = smoothstep(0.0,1.0,zs);
+  
+  vec3 color = vec3(xc, yc, zc);
+  float dl = max(0.0, dot(normalize(direction), fNormal));
+  
+  gl_FragColor = vec4(direction * color, 0.3);
+}
+
+// VERTEX
+precision highp float;
+attribute vec3 position;
+attribute vec3 normal;
+uniform mat3 normalMatrix;
+uniform mat4 modelViewMatrix;
+uniform mat4 projectionMatrix;
+varying vec3 fNormal;
+varying vec3 uPos;
+
+void main()
+{
+  fNormal = normalize(normalMatrix * normal);
+  vec4 pos = modelViewMatrix * vec4(position, 1.0);
+  uPos = position.xyz;
+  gl_Position = projectionMatrix * pos;
+}
+

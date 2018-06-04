@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a4dfbaad-60b3-4659-a83b-9267f5a9ec78" name="Default" comment="" />
+    <list default="true" id="a4dfbaad-60b3-4659-a83b-9267f5a9ec78" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Assignment2/HW2.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Assignment2/hart_chapter_6.pdf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Assignment2/hart_chapter_7.pdf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Assignment2/hw2Canvas.js" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/test/.idea/modules.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/.idea/test.iml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/.idea/workspace.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/test.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/test.js" afterPath="" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -13,49 +25,121 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="test.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/test.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="719">
-              <caret line="30" column="1" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="30" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HW1.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Assignment1/HW1.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="image.jpg" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assignment1/image.jpg">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.51488096">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="posx.imgjs" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/CS559-Computer-Graphics-master/P7/Esullivan-GraphicsTown/posx.imgjs">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="52">
+                  <caret line="2" column="28" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="28" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="drone.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/CS559-Computer-Graphics-master/P7/Esullivan-GraphicsTown/Drone/drone.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="373">
+                  <caret line="118" column="50" lean-forward="false" selection-start-line="118" selection-start-column="50" selection-end-line="118" selection-end-column="50" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="texturedplane.js" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/CS559-Computer-Graphics-master/P7/Esullivan-GraphicsTown/ExampleObjects/texturedplane.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-1923">
+                  <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="p7.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/CS559-Computer-Graphics-master/P7/Esullivan-GraphicsTown/p7.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="364">
+                  <caret line="14" column="28" lean-forward="false" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="ground.js" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/CS559-Computer-Graphics-master/P7/Esullivan-GraphicsTown/ExampleObjects/ground.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-1602">
+                  <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>ctx</find>
+      <find>mousemove</find>
+      <find>console</find>
+      <find>street</find>
+      <find>car</find>
+      <find>drone</find>
+      <find>hermite</find>
+      <find>dron</find>
+      <find>sun</find>
+      <find>drawingstate</find>
+      <find>examine</find>
+      <find>spotlightpos</find>
+      <find>vs</find>
+      <find>skybox</find>
+      <find>plane</find>
+      <find>posy</find>
+      <find>negy</find>
+      <find>posx</find>
+      <find>negx</find>
+      <find>cargo</find>
+      <find>color</find>
     </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assignment1/Script.js" />
-        <option value="$PROJECT_DIR$/test/test.html" />
         <option value="$PROJECT_DIR$/test/test.js" />
         <option value="$PROJECT_DIR$/Assignment1/myCanvas.js" />
         <option value="$PROJECT_DIR$/Assignment1/Assignment1.html" />
+        <option value="$PROJECT_DIR$/test/test.html" />
+        <option value="$PROJECT_DIR$/Assignment2/hw2TestCanvas.js" />
+        <option value="$PROJECT_DIR$/CircularMotion/circularMotion.html" />
+        <option value="$PROJECT_DIR$/Assignment2/hw2Canvas.js" />
+        <option value="$PROJECT_DIR$/Assignment2/HW2 copy.html" />
+        <option value="$PROJECT_DIR$/Assignment2/HW2.html" />
+        <option value="$PROJECT_DIR$/Assignment7-9/GraphicsTownJS2015-master/ExampleObjects/building.js" />
+        <option value="$PROJECT_DIR$/Assignment7-9/GraphicsTownJS2015-master/index.html" />
+        <option value="$PROJECT_DIR$/Assignment7-9/GraphicsTownJS2015-master/ExampleObjects/tree.js" />
+        <option value="$PROJECT_DIR$/Assignment7-9/HW8/Assignment8/Plane/plane.js" />
+        <option value="$PROJECT_DIR$/Assignment7-9/HW8/Assignment8/graphicstown.js" />
+        <option value="$PROJECT_DIR$/CS559-Computer-Graphics-master/P7/Esullivan-GraphicsTown/ExampleObjects/ground.js" />
+        <option value="$PROJECT_DIR$/CS559-Computer-Graphics-master/P7/Esullivan-GraphicsTown/skybox.imgjs" />
+        <option value="$PROJECT_DIR$/CS559-Computer-Graphics-master/P7/Esullivan-GraphicsTown/skybox.js" />
+        <option value="$PROJECT_DIR$/CS559-Computer-Graphics-master/P7/Esullivan-GraphicsTown/p7.html" />
+        <option value="$PROJECT_DIR$/Assignment7-9/HW8/Assignment8/ExampleObjects/ground.js" />
+        <option value="$PROJECT_DIR$/Assignment7-9/HW8/Assignment8/index.html" />
+        <option value="$PROJECT_DIR$/CS559-Computer-Graphics-master/P7/Esullivan-GraphicsTown/Drone/drone.js" />
+        <option value="$PROJECT_DIR$/Assignment7-9/HW8/Assignment8/ExampleObjects/house.js" />
       </list>
     </option>
   </component>
@@ -65,10 +149,11 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" fullScreen="true">
     <option name="width" value="1680" />
     <option name="height" value="1050" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
@@ -100,7 +185,92 @@
             <path>
               <item name="CS559" type="b2602c69:ProjectViewProjectNode" />
               <item name="CS559" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="Assignment7-9" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CS559" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CS559" type="462c0819:PsiDirectoryNode" />
+              <item name="Assignment7-9" type="462c0819:PsiDirectoryNode" />
+              <item name="HW8" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CS559" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CS559" type="462c0819:PsiDirectoryNode" />
+              <item name="Assignment7-9" type="462c0819:PsiDirectoryNode" />
+              <item name="HW8" type="462c0819:PsiDirectoryNode" />
+              <item name="Assignment8" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CS559" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CS559" type="462c0819:PsiDirectoryNode" />
+              <item name="Assignment7-9" type="462c0819:PsiDirectoryNode" />
+              <item name="HW8" type="462c0819:PsiDirectoryNode" />
+              <item name="Assignment8" type="462c0819:PsiDirectoryNode" />
+              <item name="ExampleObjects" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CS559" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CS559" type="462c0819:PsiDirectoryNode" />
+              <item name="Assignment7-9" type="462c0819:PsiDirectoryNode" />
+              <item name="Yokohama3" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CS559" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CS559" type="462c0819:PsiDirectoryNode" />
+              <item name="CS559-Computer-Graphics-master" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CS559" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CS559" type="462c0819:PsiDirectoryNode" />
+              <item name="CS559-Computer-Graphics-master" type="462c0819:PsiDirectoryNode" />
+              <item name="P7" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CS559" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CS559" type="462c0819:PsiDirectoryNode" />
+              <item name="CS559-Computer-Graphics-master" type="462c0819:PsiDirectoryNode" />
+              <item name="P7" type="462c0819:PsiDirectoryNode" />
+              <item name="Esullivan-GraphicsTown" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CS559" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CS559" type="462c0819:PsiDirectoryNode" />
+              <item name="CS559-Computer-Graphics-master" type="462c0819:PsiDirectoryNode" />
+              <item name="P7" type="462c0819:PsiDirectoryNode" />
+              <item name="Esullivan-GraphicsTown" type="462c0819:PsiDirectoryNode" />
+              <item name="CargoContainer" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CS559" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CS559" type="462c0819:PsiDirectoryNode" />
+              <item name="CS559-Computer-Graphics-master" type="462c0819:PsiDirectoryNode" />
+              <item name="P7" type="462c0819:PsiDirectoryNode" />
+              <item name="Esullivan-GraphicsTown" type="462c0819:PsiDirectoryNode" />
+              <item name="Drone" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CS559" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CS559" type="462c0819:PsiDirectoryNode" />
+              <item name="CS559-Computer-Graphics-master" type="462c0819:PsiDirectoryNode" />
+              <item name="P7" type="462c0819:PsiDirectoryNode" />
+              <item name="Esullivan-GraphicsTown" type="462c0819:PsiDirectoryNode" />
+              <item name="ExampleObjects" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CS559" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CS559" type="462c0819:PsiDirectoryNode" />
+              <item name="CS559-Computer-Graphics-master" type="462c0819:PsiDirectoryNode" />
+              <item name="P7" type="462c0819:PsiDirectoryNode" />
+              <item name="Esullivan-GraphicsTown" type="462c0819:PsiDirectoryNode" />
+              <item name="Libraries" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CS559" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CS559" type="462c0819:PsiDirectoryNode" />
+              <item name="CS559-Computer-Graphics-master" type="462c0819:PsiDirectoryNode" />
+              <item name="P7" type="462c0819:PsiDirectoryNode" />
+              <item name="Esullivan-GraphicsTown" type="462c0819:PsiDirectoryNode" />
+              <item name="Plane" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -115,6 +285,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/williamshu/Documents/2018Spring/CS559/CS559-Computer-Graphics-master/P7/Esullivan-GraphicsTown/ExampleObjects/ground.js" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -128,23 +299,26 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.HW1.html">
+  <component name="RunManager" selected="JavaScript Debug.index.html">
     <configuration name="Assignment1.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/CS559/Assignment1/Assignment1.html" />
     <configuration name="HW1.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/CS559/Assignment1/HW1.html" />
+    <configuration name="HW2.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/CS559/Assignment2/HW2.html" />
+    <configuration name="index.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/CS559/Assignment7-9/GraphicsTownJS2015-master/index.html" />
     <configuration name="test.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/CS559/test/test.html" />
-    <configuration name="test.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-js-file="test.js" working-dir="$PROJECT_DIR$/test" />
-    <list size="4">
+    <list size="5">
       <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.Assignment1.html" />
       <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.test.html" />
-      <item index="2" class="java.lang.String" itemvalue="Node.js.test.js" />
-      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.HW1.html" />
+      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.HW1.html" />
+      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.HW2.html" />
+      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
     </list>
     <recent_temporary>
-      <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.HW1.html" />
-        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.Assignment1.html" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
+        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.HW2.html" />
         <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.test.html" />
-        <item index="3" class="java.lang.String" itemvalue="Node.js.test.js" />
+        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.HW1.html" />
+        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.Assignment1.html" />
       </list>
     </recent_temporary>
   </component>
@@ -162,23 +336,24 @@
       <option name="presentableId" value="Default" />
       <updated>1517183221166</updated>
       <workItem from="1517183222294" duration="7708000" />
-      <workItem from="1517201971809" duration="2323000" />
+      <workItem from="1517201971809" duration="3864000" />
+      <workItem from="1518121858237" duration="8869000" />
+      <workItem from="1518140279082" duration="12506000" />
+      <workItem from="1523924855835" duration="12288000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10031000" />
+    <option name="totallyTimeSpent" value="45235000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1680" height="1027" extended-state="6" />
-    <editor active="true" />
+    <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1845238" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3292683" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3292683" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -189,6 +364,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3292683" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -205,63 +381,359 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Assignment1/Assignment1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="9" column="3" lean-forward="false" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assignment1/myCanvas.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2210">
-          <caret line="85" column="22" lean-forward="true" selection-start-line="85" selection-start-column="22" selection-end-line="85" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignment1/Assignment1.html" />
+    <entry file="file://$PROJECT_DIR$/Assignment1/myCanvas.js" />
     <entry file="file://$PROJECT_DIR$/Assignment1/Script.js" />
+    <entry file="file://$PROJECT_DIR$/Assignment1/myCanvas.js" />
+    <entry file="file://$PROJECT_DIR$/Assignment1/Assignment1.html" />
     <entry file="file://$PROJECT_DIR$/Assignment1/image.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assignment1/myCanvas.js">
+    <entry file="file://$PROJECT_DIR$/Assignment1/myCanvasFile.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="424">
-          <caret line="71" column="27" lean-forward="false" selection-start-line="71" selection-start-column="27" selection-end-line="71" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assignment1/Assignment1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="11" column="37" lean-forward="false" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/test.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="14" column="7" lean-forward="true" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
-          <folding />
+        <state relative-caret-position="577">
+          <caret line="89" column="0" lean-forward="false" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="719">
-          <caret line="30" column="1" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="30" selection-end-column="1" />
-          <folding />
+        <state relative-caret-position="0">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assignment1/HW1.html">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="8" column="33" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CircularMotion/circularMotion.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="2" column="36" lean-forward="false" selection-start-line="2" selection-start-column="36" selection-end-line="2" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignment2/hw2TestCanvas.js" />
+    <entry file="file://$PROJECT_DIR$/Assignment2/HW2 copy.html" />
+    <entry file="file://$PROJECT_DIR$/Assignment2/HW2.html">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignment7-9/GraphicsTownJS2015-master/Helicopter/helicopter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="44" column="22" lean-forward="true" selection-start-line="44" selection-start-column="22" selection-end-line="44" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignment7-9/GraphicsTownJS2015-master/ExampleObjects/Streetlight.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2070">
+          <caret line="32" column="22" lean-forward="false" selection-start-line="32" selection-start-column="22" selection-end-line="32" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignment7-9/GraphicsTownJS2015-master/ExampleObjects/texturedplane.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-9005">
+          <caret line="25" column="34" lean-forward="true" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignment7-9/GraphicsTownJS2015-master/graphicstown.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignment7-9/GraphicsTownJS2015-master/ExampleObjects/building.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="313">
+          <caret line="56" column="20" lean-forward="true" selection-start-line="56" selection-start-column="20" selection-end-line="56" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignment7-9/GraphicsTownJS2015-master/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="633">
+          <caret line="219" column="34" lean-forward="true" selection-start-line="219" selection-start-column="34" selection-end-line="219" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignment7-9/GraphicsTownJS2015-master/ExampleObjects/tree.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="530">
+          <caret line="146" column="38" lean-forward="true" selection-start-line="146" selection-start-column="38" selection-end-line="146" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignment2/hw2Canvas.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="556">
+          <caret line="138" column="0" lean-forward="false" selection-start-line="138" selection-start-column="0" selection-end-line="138" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignment7-9/HW8/Assignment8/Plane/plane.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="35" column="63" lean-forward="false" selection-start-line="35" selection-start-column="61" selection-end-line="35" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CS559-Computer-Graphics-master/P7/Esullivan-GraphicsTown/hermite.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CS559-Computer-Graphics-master/P7/Esullivan-GraphicsTown/windmill_data.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignment7-9/HW8/Assignment8/texture.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-616">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CS559-Computer-Graphics-master/P7/Esullivan-GraphicsTown/texture.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="9" column="44" lean-forward="false" selection-start-line="9" selection-start-column="44" selection-end-line="9" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CS559-Computer-Graphics-master/P7/Esullivan-GraphicsTown/Plane/plane.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="7" column="13" lean-forward="true" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CS559-Computer-Graphics-master/P7/Esullivan-GraphicsTown/grobject.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1446">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CS559-Computer-Graphics-master/P7/Esullivan-GraphicsTown/objToJavascript.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignment7-9/HW8/Assignment8/Skybox/skybox.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="520">
+          <caret line="20" column="30" lean-forward="true" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CS559-Computer-Graphics-master/P7/Esullivan-GraphicsTown/Libraries/twgl-full.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="6" column="33" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="6554" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignment7-9/HW8/Assignment8/Libraries/twgl-full.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="7" column="14" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="6554" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CS559-Computer-Graphics-master/P7/Esullivan-GraphicsTown/graphicstown.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2262">
+          <caret line="87" column="34" lean-forward="true" selection-start-line="87" selection-start-column="34" selection-end-line="87" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignment7-9/HW8/Assignment8/Drone/drone.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="60" column="65" lean-forward="false" selection-start-line="60" selection-start-column="63" selection-end-line="60" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CS559-Computer-Graphics-master/P7/Esullivan-GraphicsTown/Libraries/panel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3422">
+          <caret line="6" column="17" lean-forward="true" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignment7-9/HW8/Assignment8/Libraries/panel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3448">
+          <caret line="5" column="13" lean-forward="true" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignment7-9/HW8/Assignment8/Libraries/arcball.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4119">
+          <caret line="11" column="23" lean-forward="true" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CS559-Computer-Graphics-master/P7/Esullivan-GraphicsTown/Libraries/arcball.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4176">
+          <caret line="9" column="3" lean-forward="true" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignment7-9/Yokohama3/negx.imgjs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="758">
+          <caret line="2" column="1385934" lean-forward="false" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="1385934" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CS559-Computer-Graphics-master/P7/Esullivan-GraphicsTown/skybox.imgjs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="624">
+          <caret line="24" column="24" lean-forward="false" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CS559-Computer-Graphics-master/P7/Esullivan-GraphicsTown/skybox.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2200">
+          <caret line="15" column="27" lean-forward="false" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CS559-Computer-Graphics-master/P7/Esullivan-GraphicsTown/posx.imgjs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="2" column="28" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignment7-9/HW8/Assignment8/graphicstown.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6162">
+          <caret line="237" column="0" lean-forward="false" selection-start-line="237" selection-start-column="0" selection-end-line="237" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CS559-Computer-Graphics-master/P7/Esullivan-GraphicsTown/p7.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="14" column="28" lean-forward="false" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CS559-Computer-Graphics-master/P7/Esullivan-GraphicsTown/ExampleObjects/ground.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1602">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CS559-Computer-Graphics-master/P7/Esullivan-GraphicsTown/Drone/drone.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="373">
+          <caret line="118" column="50" lean-forward="false" selection-start-line="118" selection-start-column="50" selection-end-line="118" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignment7-9/HW8/Assignment8/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9740">
+          <caret line="380" column="52" lean-forward="false" selection-start-line="380" selection-start-column="52" selection-end-line="380" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignment7-9/HW8/Assignment8/ExampleObjects/house.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3558">
+          <caret line="137" column="34" lean-forward="false" selection-start-line="137" selection-start-column="34" selection-end-line="137" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignment7-9/HW8/Assignment8/ExampleObjects/ground.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="362">
+          <caret line="32" column="41" lean-forward="false" selection-start-line="32" selection-start-column="41" selection-end-line="32" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CS559-Computer-Graphics-master/P7/Esullivan-GraphicsTown/ExampleObjects/texturedplane.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1923">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
